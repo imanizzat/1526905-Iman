@@ -10,16 +10,16 @@ namespace WebApplication4
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        private object txtName;
-        private object txtMessage;
-        private object txtEmail;
+        // private object txtFirstname;
+        // private object txtMessage;
+        //private object txtEmail;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void txtSubmit_Click(object sender, EventArgs e)
         {
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.EnableSsl = true;
@@ -29,9 +29,14 @@ namespace WebApplication4
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.Port = 587;
 
-            MailMessage msg = new MailMessage("imanizzatfarhan@gmail.com", txtEmail.Text);
-            msg.Subject = "Name: " + txtFirstname.Text + "Subject: " + txtMessage.Text;
-            smtpClient.Send(msg);
+            // MailMessage msg = new MailMessage("imanizzatfarhan@gmail.com", txtEmail);
+            //  msg.Subject = "Name: " + txtFirstname.Text + "Subject: " + txtMessage.Text;
+            //smtpClient.Send(msg);
+        }
+
+        protected void txtFirstname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

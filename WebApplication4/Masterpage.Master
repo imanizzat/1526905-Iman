@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.Master.cs" Inherits="WebApplication4.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         
+      
+    </asp:ContentPlaceHolder>
+     <!-- <link href="Styles/Stylesheet.css" rel="stylesheet" />-->
+</head>
+
+<body>
+     <nav>
+					<ul>
+						<li><a class="default.aspx" href="#">Home</a></li>
+						<li><a href="#">Headphones</a></li>
+						<li><a href="#">Earphones</a></li>
+						<li><a href="#">Music Player and Accesssoires</a></li>
+					
+     				</ul>
+				</nav>		
+  
+    
+    <form id="form1" runat="server">
+        
+		
+		
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+        <footer>
+			<ul>
+				<li>Site map</li>
+				<li>Contact Us</li>
+				<li>About us</li>	
+			</ul>
+		</footer>
+
+    </form>
+</body>
+</html>
